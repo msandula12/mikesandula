@@ -1,0 +1,40 @@
+.menu {
+  background-color: var(--background-primary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  left: 0;
+  padding: 1em 2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  nav {
+    align-items: self-start;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+
+    a {
+      display: block;
+      font-size: 42px;
+      margin-bottom: 1em;
+      position: relative;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.activeIcon {
+  left: -2em;
+  position: absolute;
+  top: 0;
+}

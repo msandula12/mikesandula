@@ -1,0 +1,170 @@
+/* Variables */
+:root {
+  /**
+   * VS Code dark+ color palette 
+   * http://www.eclipsecolorthemes.org/?view=theme&id=50827
+   */
+  --code-annotation: #ffffff;
+  --code-class: #4ec9b0;
+  --code-field: #9cdcfe;
+  --code-method: #dcdcaa;
+  --code-operator: #d8d8d8;
+  --code-singleLineComment: #608b4e;
+  --code-string: #ce9178;
+
+  /* Site colors */
+  --background-primary: #2a2a2a;
+  --background-secondary: #4ec9b0;
+
+  /* Social media colors */
+  --codepen: #0ebeff;
+  --github: #211f1f;
+  --linkedin: #007bb5;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1em;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.page {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 6em 1em;
+  width: 100%;
+}
+
+.content {
+  font-size: 18px;
+  max-width: 600px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.text-right {
+  text-align: right;
+}
+
+h1 {
+  color: white;
+}
+
+.indented-1 {
+  margin-left: 1em;
+}
+
+.indented-2 {
+  margin-left: 2em;
+}
+
+.indented-3 {
+  margin-left: 3em;
+}
+
+.indented-4 {
+  margin-left: 4em;
+}
+
+.indented-5 {
+  margin-left: 5em;
+}
+
+.clickable-padding {
+  cursor: pointer;
+  margin: -0.5em;
+  padding: 0.5em;
+}
+
+.icon {
+  font-size: 42px;
+}
+
+.icon-shadow {
+  text-shadow: 0 0 0.5em rgba(255, 255, 255, 0.6);
+
+  &:hover {
+    cursor: pointer;
+    text-shadow: 0 0 1em rgba(255, 255, 255, 0.8);
+  }
+}
+
+.float-right {
+  float: right;
+}
+
+/* CODE COLORS */
+.code-annotation {
+  color: var(--code-annotation);
+}
+
+.code-class {
+  color: var(--code-class);
+}
+
+.code-field {
+  color: var(--code-field);
+}
+
+.code-method {
+  color: var(--code-method);
+}
+
+.code-operator {
+  color: var(--code-operator);
+}
+
+.code-singleLineComment {
+  color: var(--code-singleLineComment);
+}
+
+.code-string {
+  color: var(--code-string);
+}

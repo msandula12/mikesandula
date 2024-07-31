@@ -1,0 +1,18 @@
+.downloadPdf {
+  background: var(--code-class);
+  border-radius: 0.5em;
+  color: white;
+  cursor: pointer;
+  padding: 1em;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .downloadPdf {
+    width: calc(100vw - 4em);
+  }
+}

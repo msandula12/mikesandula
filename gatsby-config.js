@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Mike Sandula`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "Mike Sandula",
+    siteUrl: "https://www.mikesandula.dev",
   },
   plugins: [
     "gatsby-plugin-sass",

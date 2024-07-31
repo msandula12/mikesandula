@@ -1,0 +1,27 @@
+.about {
+  background-color: var(--background-secondary);
+  color: white;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+
+  i {
+    font-size: 64px;
+    margin-bottom: 8px;
+    transition: color 0.4s ease-out;
+  }
+}
+
+.codepen i:hover {
+  color: var(--codepen);
+}
+
+.github i:hover {
+  color: var(--github);
+}
+
+.linkedin i:hover {
+  color: var(--linkedin);
+}

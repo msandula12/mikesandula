@@ -1,0 +1,20 @@
+.fade {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  will-change: opacity, visibility;
+
+  /* Fade in new sections */
+  --fadeInSection: opacity 0.6s ease-out, transform 1.2s ease-out;
+  transition: var(--fadeInSection);
+  -o-transition: var(--fadeInSection);
+  -ms-transition: var(--fadeInSection);
+  -moz-transition: var(--fadeInSection);
+  -webkit-transition: var(--fadeInSection);
+}
+
+.visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

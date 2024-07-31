@@ -1,0 +1,68 @@
+.landing {
+  background-color: var(--background-primary);
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  /* Fade-in background color after typing animation completes */
+  --fadeInBackground: background 0.4s ease-in;
+  transition: var(--fadeInBackground);
+  -o-transition: var(--fadeInBackground);
+  -ms-transition: var(--fadeInBackground);
+  -moz-transition: var(--fadeInBackground);
+  -webkit-transition: var(--fadeInBackground);
+}
+
+.landingLogo {
+  font-size: calc(36px + 2vmin);
+}
+
+.scrollDown {
+  animation-direction: normal;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-name: wiggle;
+  animation-timing-function: ease-in-out;
+  bottom: 0;
+  color: white;
+  margin: 16px 32px;
+  position: absolute;
+  right: 0;
+}
+
+@media only screen and (min-width: 1300px) {
+  .splitLogo {
+    display: inline-block;
+
+    &:first-child {
+      margin-right: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .landingLogo {
+    font-size: 6vmin;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle {
+  from,
+  to {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 10px;
+  }
+}

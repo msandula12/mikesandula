@@ -1,0 +1,152 @@
+{
+  "title": "Software Engineer",
+  "location": "Shelby Township, MI, 48315",
+  "email": "msandula@gmail.com",
+  "github": "msandula12",
+  "linkedin": "MikeSandula",
+  "skills": [
+    {
+      "category": "Software languages, frameworks, tools",
+      "skills": [
+        "Angular",
+        "Ariakit",
+        "CSS/Less/Sass/CSS-in-JS",
+        "Cypress",
+        "Emotion (CSS-in-JS)",
+        "ESLint",
+        "Express.js",
+        "Git",
+        "GraphQL",
+        "HTML",
+        "JavaScript",
+        "Jest",
+        "Material UI",
+        "Next.js",
+        "Node.js",
+        "NPM",
+        "Prettier",
+        "Python (Dash/Flask)",
+        "React Testing Library",
+        "React.js",
+        "Redux",
+        "RESTful APIs",
+        "Storybook",
+        "Tailwind CSS",
+        "TypeScript",
+        "Vue.js",
+        "Webpack",
+        "WebSockets",
+        "Yarn"
+      ]
+    },
+    {
+      "category": "Applications",
+      "skills": [
+        "Adobe XD",
+        "AWS",
+        "Confluence",
+        "Fastly CDN",
+        "Figma",
+        "GitHub/GitLab",
+        "Jira",
+        "Semaphore"
+      ]
+    },
+    {
+      "category": "Practices",
+      "skills": [
+        "Agile/Scrum",
+        "ARIA/Web Accessibility",
+        "Code Reviews",
+        "Frontend Testing",
+        "Search Engine Optimization (SEO)"
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "company": "Dictionary.com",
+      "location": "Oakland, CA (remote)",
+      "roles": [
+        {
+          "descriptions": [
+            "Lead engineer for redesign of Dictionary.com and Thesaurus.com websites, serving 40 million daily users",
+            "Developed in-house design system in tandem with design team using Figma, Ariakit, and Style Dictionary",
+            "Converted 5+ RESTful API calls into a single Apollo GraphQL query that retrieved only the necessary data for populating Dictionary and Thesaurus browse pages",
+            "Implemented Storyblok’s Headless CMS to populate shared data modules, enhancing content creation and scheduling efficiency for the content team",
+            "Formulated a design patterns document to establish best coding practices across engineering teams"
+          ],
+          "endDate": null,
+          "startDate": "April 2023",
+          "title": "Staff Software Engineer"
+        },
+        {
+          "descriptions": [
+            "Optimized UX of Grammar Coach editor by integrating WebSockets and implementing sentence diffing, which reduced the average payload size by 90 percent and decreased API latency by 75 percent",
+            "Refactored Grammar Coach’s Next.js codebase (100+ components) to TypeScript, introduced Redux Toolkit, and significantly expanded end-to-end testing coverage with Cypress",
+            "Collaborated with product, design, backend, and machine learning teams in an agile environment"
+          ],
+          "endDate": "April 2023",
+          "startDate": "August 2021",
+          "title": "Senior Software Engineer"
+        }
+      ]
+    },
+    {
+      "company": "Great Lakes Consulting Services, Inc.",
+      "location": "Livonia, MI (hybrid)",
+      "roles": [
+        {
+          "descriptions": [
+            "Developed and managed a React with Redux and TypeScript frontend of an end-to-end budget forecasting application with millions of hospital records for Trinity Health’s budget team",
+            "Designed a multi-page dashboard application with interactive charts and graphs with Dash/Flask (Python)",
+            "Contributed to the recruitment and mentoring of junior engineers and interns, facilitating their seamless onboarding and training processes"
+          ],
+          "endDate": "July 2021",
+          "startDate": "January 2019",
+          "title": "Software Developer"
+        }
+      ]
+    },
+    {
+      "company": "Logicdrop",
+      "location": "Ferndale, MI (hybrid)",
+      "roles": [
+        {
+          "descriptions": [
+            "Launched multiple websites and web apps for various clients using cutting-edge frontend frameworks such as Angular 2+, React and Vue",
+            "Led frontend development for Logicdrop’s Studio Platform, a tool for enterprise-level document automation with a drag-and-drop template editor comprised of over 20 custom elements",
+            "Utilized RxJS observables to provide real-time progress updates to users uploading large documents",
+            "Implemented robust functionality for importing Excel spreadsheets and .CSV files into editable data tables"
+          ],
+          "endDate": "December 2018",
+          "startDate": "April 2016",
+          "title": "Software Developer"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "descriptions": ["JavaScript Developer Bootcamp"],
+      "graduated": "March 2016",
+      "location": "Detrot, MI",
+      "place": "Grand Circus"
+    },
+    {
+      "descriptions": [
+        "Bachelor of Arts in Journalism (Cum Laude with departmental honors)"
+      ],
+      "graduated": "December 2010",
+      "location": "Rochester, MI",
+      "place": "Oakland University"
+    }
+  ],
+  "certifications": [
+    {
+      "from": "Amazon Web Services",
+      "obtained": "February 2024",
+      "description": "AWS Certified Cloud Practitioner (CLF-C02)"
+    }
+  ]
+}

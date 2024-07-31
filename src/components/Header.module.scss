@@ -1,0 +1,47 @@
+.header {
+  align-items: center;
+  background-color: var(--background-primary);
+  box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 0.2);
+  color: white;
+  display: flex;
+  padding: 1em 2em;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  nav {
+    margin-bottom: -0.5em;
+    margin-top: 0.5em;
+
+    a {
+      display: inline-block;
+      font-size: 24px;
+      padding: 0 1.5em;
+      text-align: center;
+    }
+
+    hr {
+      background-color: white;
+      border: none;
+      height: 2px;
+      margin-top: 1em;
+      text-align: left;
+      width: 50%;
+
+      /* Slide between active pages */
+      --hrSlide: 0.4s ease-in-out;
+      -moz-transition: var(--hrSlide);
+      -ms-transition: var(--hrSlide);
+      -o-transition: var(--hrSlide);
+      -webkit-transition: var(--hrSlide);
+      transition: var(--hrSlide);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navIcon {
+    flex: 1;
+  }
+}
