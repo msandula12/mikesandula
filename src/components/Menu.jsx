@@ -26,7 +26,7 @@ const Menu = ({ activePage, onMenuClose, onPageNav, pages }) => {
             href={`#/${page.page}`}
             key={page.page}
             onClick={() => onPageNav(page.page)}
-            style={{ width: `100 / ${pages.length}%` }}
+            style={{ width: `${100 / pages.length}%` }}
           >
             {(activePage === page.page ||
               (!activePage && page.page === "home")) && (

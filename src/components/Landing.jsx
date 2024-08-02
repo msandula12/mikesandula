@@ -29,8 +29,8 @@ const Landing = () => {
       <div className={cx("icon", "icon-shadow", styles.scrollDown)}>
         <a
           aria-label="Scroll down"
-          href="#/about"
           className="clickable-padding"
+          href="#/about"
           onClick={() => scrollToPage("about")}
         >
           <i className="fas fa-chevron-down" />

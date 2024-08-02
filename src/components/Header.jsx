@@ -8,22 +8,22 @@ import * as styles from "./Header.module.scss";
 
 import { scrollToPage } from "../utils";
 
+const PAGES = [
+  {
+    label: "About",
+    page: "about",
+  },
+  {
+    label: "Resume",
+    page: "resume",
+  },
+];
+
 const Header = ({ activePage }) => {
   const [isShowingMenu, setIsShowingMenu] = useState(false);
   const [shouldShowMenu, setShouldShowMenu] = useState(
     window.innerWidth < 1200
   );
-
-  const pages = [
-    {
-      label: "About",
-      page: "about",
-    },
-    {
-      label: "Resume",
-      page: "resume",
-    },
-  ];
 
   useEffect(() => {
     const detectScreenSize = () => {
@@ -44,29 +44,29 @@ const Header = ({ activePage }) => {
     config: config.slow,
   });
 
-  const handlePageNav = (page) => {
+  function closeMenu() {
+    setIsShowingMenu(false);
+    document.body.classList.remove("no-scroll");
+  }
+
+  function openMenu() {
+    setIsShowingMenu(true);
+    document.body.classList.add("no-scroll");
+  }
+
+  function getPositionOfUnderline() {
+    const index = activePage
+      ? PAGES.map((page) => page.page).indexOf(activePage)
+      : 0;
+    return (100 / PAGES.length) * index;
+  }
+
+  function handlePageNav(page) {
     if (isShowingMenu) {
       closeMenu();
     }
     scrollToPage(page);
-  };
-
-  const openMenu = () => {
-    setIsShowingMenu(true);
-    document.body.classList.add("no-scroll");
-  };
-
-  const closeMenu = () => {
-    setIsShowingMenu(false);
-    document.body.classList.remove("no-scroll");
-  };
-
-  const getPositionOfUnderline = () => {
-    const index = activePage
-      ? pages.map((page) => page.page).indexOf(activePage)
-      : 0;
-    return (100 / pages.length) * index;
-  };
+  }
 
   return (
     <header className={styles.header}>
@@ -84,13 +84,13 @@ const Header = ({ activePage }) => {
       {/* NAV - HEADER */}
       {!shouldShowMenu && (
         <nav>
-          {pages.map((page) => (
+          {PAGES.map((page) => (
             <a
               aria-label={page.label}
               href={`#/${page.page}`}
               key={page.page}
               onClick={() => handlePageNav(page.page)}
-              style={{ width: `100 / ${pages.length}%` }}
+              style={{ width: `100 / ${PAGES.length}%` }}
             >
               {page.label}
             </a>
@@ -109,8 +109,8 @@ const Header = ({ activePage }) => {
           ) : (
             <a
               aria-label="Home"
-              href="#/home"
               className="clickable-padding"
+              href="#/home"
               onClick={() => handlePageNav("home")}
             >
               <i className="fas fa-chevron-up" />
@@ -128,7 +128,7 @@ const Header = ({ activePage }) => {
                 activePage={activePage}
                 onMenuClose={closeMenu}
                 onPageNav={handlePageNav}
-                pages={pages}
+                pages={PAGES}
               />
             </animated.div>
           )

@@ -6,11 +6,11 @@
 
   /* Fade-in background color after typing animation completes */
   --fadeInBackground: background 0.4s ease-in;
-  transition: var(--fadeInBackground);
-  -o-transition: var(--fadeInBackground);
-  -ms-transition: var(--fadeInBackground);
   -moz-transition: var(--fadeInBackground);
+  -ms-transition: var(--fadeInBackground);
+  -o-transition: var(--fadeInBackground);
   -webkit-transition: var(--fadeInBackground);
+  transition: var(--fadeInBackground);
 }
 
 .landingLogo {
@@ -25,7 +25,7 @@
   animation-timing-function: ease-in-out;
   bottom: 0;
   color: white;
-  margin: 16px 32px;
+  margin: 1em 2em;
   position: absolute;
   right: 0;
 }
@@ -35,7 +35,7 @@
     display: inline-block;
 
     &:first-child {
-      margin-right: 24px;
+      margin-right: 1.5em;
     }
   }
 }
