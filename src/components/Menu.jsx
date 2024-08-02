@@ -15,7 +15,7 @@ const Menu = ({ activePage, onMenuClose, onPageNav, pages }) => {
 
   return (
     <div className={styles.menu}>
-      <div className="icon icon-shadow flex-end">
+      <div className={cx("icon icon-shadow", styles.menuClose)}>
         <div className="clickable-padding" onClick={onMenuClose}>
           <i className="fas fa-times" />
         </div>

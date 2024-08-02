@@ -1,6 +1,6 @@
 .about {
   background-color: var(--background-secondary);
-  color: white;
+  color: var(--background-primary);
 }
 
 .socialIcons {
@@ -8,6 +8,7 @@
   flex-direction: column;
 
   i {
+    color: #4a4a4a;
     font-size: 64px;
     margin-bottom: 0.5em;
     transition: color 0.4s ease-out;

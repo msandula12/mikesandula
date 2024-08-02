@@ -1,23 +1,19 @@
 .menu {
+  align-items: center;
   background-color: var(--background-primary);
   color: white;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  justify-content: center;
   left: 0;
-  padding: 1em 2em;
   position: fixed;
   top: 0;
   width: 100%;
 
   nav {
-    align-items: self-start;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width: -moz-fit-content;
-    width: -webkit-fit-content;
-    width: fit-content;
 
     a {
       display: block;
@@ -27,14 +23,29 @@
 
       &:hover {
         cursor: pointer;
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
   }
 }
 
-.activeIcon {
-  left: -2em;
+.menuClose {
   position: absolute;
-  top: 0;
+  right: 0.5em;
+  top: 0.5em;
+}
+
+.activeIcon {
+  font-size: 32px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .menuClose {
+    right: 1em;
+    top: 1em;
+  }
 }
