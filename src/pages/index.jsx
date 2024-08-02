@@ -1,5 +1,6 @@
 import React, { createRef, useEffect, useState } from "react";
 import { animated, useTransition } from "react-spring";
+import { Script } from "gatsby";
 
 import "./styles.scss";
 import * as styles from "./index.module.scss";
@@ -121,9 +122,12 @@ export default IndexPage;
 
 export const Head = () => (
   <>
-    {/* Font Awesome */}
-    <script src="https://kit.fontawesome.com/128c2396ac.js"></script>
+    <html lang="en" />
     <link href="/icon.png" rel="icon" type="image/png" />
+    <meta name="title" content="Mike Sandula" />
+    <meta name="description" content="Mike Sandula's personal website" />
     <title>Mike Sandula</title>
+    {/* Font Awesome */}
+    <Script src="https://kit.fontawesome.com/128c2396ac.js" defer />
   </>
 );
