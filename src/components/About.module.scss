@@ -3,6 +3,15 @@
   color: var(--background-primary);
 }
 
+.contactMe {
+  font-size: 14px;
+  font-style: italic;
+
+  a {
+    color: #fff;
+  }
+}
+
 .socialIcons {
   display: flex;
   flex-direction: column;

@@ -21,25 +21,33 @@ const About = ({ isActive }) => {
         <h1>About</h1>
         <div className="content">
           <p>
-            After graduating from Oakland University with a Bachelor of Arts in
-            Journalism in 2010, Mike Sandula worked as a copy editor for several
-            newspapers in Southeast Michigan.
+            Hello! My name is Mike Sandula. I am a seasoned software engineer
+            with over 8 years of experience crafting high-quality, user-centric
+            websites and web applications with the latest technologies (I
+            started using TypeScript way before it was cool).
           </p>
           <p>
-            In 2016, Mike channeled his lifelong love of problem-solving and
-            made the switch to programming, where his background as a copy
-            editor has proven handy in identifying bugs and maintaining clean
-            code. He attended the Front-End Bootcamp at Grand Circus in Detroit,
-            landing his first developer job shortly after.
+            I'm a problem-solver (I still do my daily Wordle) with a proven
+            track record of figuring things out. I love instilling best
+            practices across engineering teams and working alongside product and
+            design teams to ensure the best possible product.
           </p>
           <p>
-            Mike specializes in building frontends for large web applications
-            using best practices with an eye towards code readability and
-            maintainability.
+            Prior to entering the tech industry, I worked as a copy editor for
+            several newspapers throughout Southeast Michigan, so identifying
+            bugs and maintaining clean code is second-nature to me.
           </p>
           <p>
-            When he's not behind a computer, Mike can be found behind either his
-            drum set or a book, or beside his wife and their daughter and cat.
+            When I'm away from the keyboard, I can typically be found behind a
+            drum set or a book, or beside my wife, our daughter, and our cat.
+          </p>
+          <p className={styles.contactMe}>
+            <i>
+              👋 Interested in working together or debating JavaScript vs.
+              TypeScript (or, if you're a fellow drummer, Zildjian vs. Sabian)?
+              Drop me a line at{" "}
+              <a href="mailto:msandula@gmail.com">msandula@gmail.com</a>.
+            </i>
           </p>
         </div>
       </FadeInSection>
