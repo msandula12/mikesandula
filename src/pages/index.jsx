@@ -6,6 +6,7 @@ import "./styles.scss";
 import * as styles from "./index.module.scss";
 
 import About from "../components/About";
+import Articles from "../components/Articles";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
@@ -16,6 +17,7 @@ const IndexPage = () => {
   const [shouldShowHeader, setShouldShowHeader] = useState(false);
 
   const aboutPage = createRef();
+  const articlesPage = createRef();
   const homePage = createRef();
   const resumePage = createRef();
 
@@ -33,6 +35,10 @@ const IndexPage = () => {
         {
           page: "about",
           fromTop: getDistanceFromTop(aboutPage.current),
+        },
+        {
+          page: "articles",
+          fromTop: getDistanceFromTop(articlesPage.current),
         },
         {
           page: "resume",
@@ -57,7 +63,7 @@ const IndexPage = () => {
     window.addEventListener("scroll", determineActivePage);
 
     return () => window.removeEventListener("scroll", determineActivePage);
-  }, [page, homePage, aboutPage, resumePage]);
+  }, [aboutPage, articlesPage, homePage, page, resumePage]);
 
   const headerTransition = useTransition(shouldShowHeader, null, {
     from: { opacity: 0, position: "fixed", top: -64 },
@@ -84,6 +90,11 @@ const IndexPage = () => {
       {/* ABOUT */}
       <section id="about" ref={aboutPage}>
         <About isActive={page === "about"} />
+      </section>
+
+      {/* ARTICLES */}
+      <section id="articles" ref={articlesPage}>
+        <Articles />
       </section>
 
       {/* RESUME */}

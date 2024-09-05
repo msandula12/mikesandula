@@ -62,13 +62,13 @@ p {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  padding: 6em 1em;
+  padding: 8em 0;
   width: 100%;
 }
 
 .content {
   font-size: 18px;
-  max-width: 600px;
+  width: 600px;
 }
 
 a {
@@ -79,14 +79,6 @@ a {
     cursor: pointer;
     text-decoration: underline;
   }
-}
-
-.flex-1 {
-  flex: 1;
-}
-
-.flex-end {
-  align-self: flex-end;
 }
 
 .text-right {

@@ -16,13 +16,19 @@ const Menu = ({ activePage, onMenuClose, onPageNav, pages }) => {
   return (
     <div className={styles.menu}>
       <div className={cx("icon icon-shadow", styles.menuClose)}>
-        <div className="clickable-padding" onClick={onMenuClose}>
+        <div
+          className="clickable-padding"
+          onClick={onMenuClose}
+          onKeyDown={onMenuClose}
+          role="presentation"
+        >
           <i className="fas fa-times" />
         </div>
       </div>
       <nav>
         {menuPages.map((page) => (
           <a
+            data-location="menu"
             href={`#/${page.page}`}
             key={page.page}
             onClick={() => onPageNav(page.page)}

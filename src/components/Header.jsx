@@ -14,6 +14,10 @@ const PAGES = [
     page: "about",
   },
   {
+    label: "Articles",
+    page: "articles",
+  },
+  {
     label: "Resume",
     page: "resume",
   },
@@ -21,15 +25,15 @@ const PAGES = [
 
 const Header = ({ activePage }) => {
   const [isShowingMenu, setIsShowingMenu] = useState(false);
-  const [shouldShowMenu, setShouldShowMenu] = useState(
-    window.innerWidth < 1200
-  );
+  const [shouldShowMenu, setShouldShowMenu] = useState(window.innerWidth < 768);
 
   useEffect(() => {
-    const detectScreenSize = () => {
+    function detectScreenSize() {
       setShouldShowMenu(window.innerWidth < 768);
-    };
+    }
+
     window.addEventListener("resize", detectScreenSize);
+
     return () => window.removeEventListener("resize", detectScreenSize);
   }, []);
 
@@ -55,10 +59,16 @@ const Header = ({ activePage }) => {
   }
 
   function getPositionOfUnderline() {
-    const index = activePage
-      ? PAGES.map((page) => page.page).indexOf(activePage)
-      : 0;
-    return (100 / PAGES.length) * index;
+    const activeNavElement = document.querySelector(
+      `a[data-location="header"][href="#/${activePage}"]`
+    );
+
+    if (!activeNavElement) return {};
+
+    return {
+      left: activeNavElement.offsetLeft,
+      width: activeNavElement.offsetWidth,
+    };
   }
 
   function handlePageNav(page) {
@@ -70,7 +80,7 @@ const Header = ({ activePage }) => {
 
   return (
     <header className={styles.header}>
-      <div className="flex-1">
+      <div className={styles.logo}>
         {/* LOGO */}
         <Link to="/">
           <div>
@@ -84,26 +94,34 @@ const Header = ({ activePage }) => {
       {/* NAV - HEADER */}
       {!shouldShowMenu && (
         <nav>
-          {PAGES.map((page) => (
-            <a
-              aria-label={page.label}
-              href={`#/${page.page}`}
-              key={page.page}
-              onClick={() => handlePageNav(page.page)}
-              style={{ width: `100 / ${PAGES.length}%` }}
-            >
-              {page.label}
-            </a>
-          ))}
-          <hr style={{ marginLeft: `${getPositionOfUnderline()}%` }} />
+          <ul>
+            {PAGES.map((page) => (
+              <li key={page.page}>
+                <a
+                  aria-label={page.label}
+                  data-location="header"
+                  href={`#/${page.page}`}
+                  onClick={() => handlePageNav(page.page)}
+                >
+                  {page.label}
+                </a>
+              </li>
+            ))}
+            <hr style={getPositionOfUnderline()} />
+          </ul>
         </nav>
       )}
 
       {/* NAV - ICON (OPEN OR CLOSE MENU) */}
-      <div className={styles.navIcon}>
+      <div>
         <div className="icon icon-shadow text-right">
           {shouldShowMenu ? (
-            <div className="clickable-padding" onClick={openMenu}>
+            <div
+              className="clickable-padding"
+              onClick={openMenu}
+              onKeyDown={openMenu}
+              role="presentation"
+            >
               <i className="fas fa-bars" />
             </div>
           ) : (

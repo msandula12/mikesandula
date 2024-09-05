@@ -16,6 +16,10 @@ export function cx(...classNames) {
     .join(" ");
 }
 
+export function hyphenate(text) {
+  return text.toLowerCase().replaceAll(" ", "-");
+}
+
 export function scrollToPage(page) {
   document.getElementById(page).scrollIntoView({
     behavior: "smooth",
