@@ -9,6 +9,10 @@ import { cx, hyphenate } from "../utils";
 
 const ARTICLES = [
   {
+    href: "https://dev.to/msandula12/using-pow-and-sqrt-in-css-to-make-shapes-with-shapes-1ma0",
+    title: "Using pow() and sqrt() in CSS to make shapes with shapes",
+  },
+  {
     href: "https://dev.to/msandula12/how-to-create-typography-tokens-for-a-design-system-using-sass-mixins-5elb",
     title:
       "How to create typography tokens for a design system using Sass mixins",
