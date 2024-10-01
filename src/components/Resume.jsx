@@ -91,7 +91,7 @@ const Resume = ({ isActive }) => {
               {skills.map((skill, index) => (
                 <div className="indented-3" key={skill}>
                   <span className="code-string">{`"${skill}"${
-                    index < resume.skills.length - 1 ? "," : ""
+                    index < skills.length - 1 ? "," : ""
                   }`}</span>
                 </div>
               ))}
