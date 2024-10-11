@@ -2,3 +2,42 @@
   background-color: var(--background-primary);
   color: white;
 }
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.project {
+  border-left: 4px solid var(--muted-text);
+  padding-left: 1em;
+  margin-left: 2px;
+}
+
+.projectDescription {
+  color: var(--muted-text);
+}
+
+.projectTech {
+  display: flex;
+  gap: 0.25em;
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+
+.projectTechPill {
+  background-color: var(--muted-text);
+  border-radius: 0.5em;
+  color: var(--background-primary);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+.projectSource {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  gap: 0.5em;
+}

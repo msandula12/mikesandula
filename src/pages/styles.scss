@@ -4,7 +4,7 @@
    * VS Code dark+ color palette 
    * http://www.eclipsecolorthemes.org/?view=theme&id=50827
    */
-  --code-annotation: #ffffff;
+  --code-annotation: #fff;
   --code-class: #4ec9b0;
   --code-field: #9cdcfe;
   --code-method: #dcdcaa;
@@ -15,6 +15,7 @@
   /* Site colors */
   --background-primary: #2a2a2a;
   --background-secondary: #4ec9b0;
+  --muted-text: #aaa;
 
   /* Social media colors */
   --codepen: #0ebeff;
@@ -69,6 +70,14 @@ p {
 .content {
   font-size: 18px;
   width: 600px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 a {
