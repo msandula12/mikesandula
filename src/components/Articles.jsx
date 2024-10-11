@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import FadeInSection from "./FadeInSection";
 
@@ -25,15 +24,19 @@ const Articles = () => {
       <FadeInSection>
         <h1>Articles</h1>
         <div className="content">
-          <ul>
-            {ARTICLES.map((article) => (
-              <li className={styles.article} key={hyphenate(article.title)}>
-                <Link to={article.href} target="_blank">
-                  {article.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          {ARTICLES.length > 0 ? (
+            <ul>
+              {ARTICLES.map((article) => (
+                <li className={styles.article} key={hyphenate(article.title)}>
+                  <a href={article.href} rel="noreferrer" target="_blank">
+                    {article.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>Coming soon...</p>
+          )}
         </div>
       </FadeInSection>
     </div>
