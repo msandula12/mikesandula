@@ -10,15 +10,17 @@ import Articles from "../components/Articles";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
+import Projects from "../components/Projects";
 import Resume from "../components/Resume";
 
 const IndexPage = () => {
   const [page, setPage] = useState("");
   const [shouldShowHeader, setShouldShowHeader] = useState(false);
 
+  const homePage = createRef();
   const aboutPage = createRef();
   const articlesPage = createRef();
-  const homePage = createRef();
+  const projectsPage = createRef();
   const resumePage = createRef();
 
   useEffect(() => {
@@ -35,6 +37,10 @@ const IndexPage = () => {
         {
           page: "about",
           fromTop: getDistanceFromTop(aboutPage.current),
+        },
+        {
+          page: "projects",
+          fromTop: getDistanceFromTop(projectsPage.current),
         },
         {
           page: "articles",
@@ -63,7 +69,7 @@ const IndexPage = () => {
     window.addEventListener("scroll", determineActivePage);
 
     return () => window.removeEventListener("scroll", determineActivePage);
-  }, [aboutPage, articlesPage, homePage, page, resumePage]);
+  }, [aboutPage, articlesPage, homePage, page, projectsPage, resumePage]);
 
   const headerTransition = useTransition(shouldShowHeader, null, {
     from: { opacity: 0, position: "fixed", top: -64 },
@@ -90,6 +96,11 @@ const IndexPage = () => {
       {/* ABOUT */}
       <section id="about" ref={aboutPage}>
         <About isActive={page === "about"} />
+      </section>
+
+      {/* PROJECTS */}
+      <section id="projects" ref={projectsPage}>
+        <Projects />
       </section>
 
       {/* ARTICLES */}

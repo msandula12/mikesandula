@@ -14,6 +14,10 @@ const PAGES = [
     page: "about",
   },
   {
+    label: "Projects",
+    page: "projects",
+  },
+  {
     label: "Articles",
     page: "articles",
   },
