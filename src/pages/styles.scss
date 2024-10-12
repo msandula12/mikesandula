@@ -166,6 +166,10 @@ a {
   color: var(--code-string);
 }
 
+[class^="code"] {
+  word-break: break-word;
+}
+
 @media only screen and (min-width: 768px) {
   .content {
     width: 600px;

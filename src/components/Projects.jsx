@@ -8,24 +8,15 @@ import { cx, hyphenate } from "../utils";
 
 const PROJECTS = [
   {
-    description: (
-      <>
-        <p>
-          My personal website aka the site you're on <em>right now</em>.
-        </p>
-      </>
-    ),
+    description: "My personal website aka the site you're on right now.",
     href: "https://mikesandula.dev",
     source: "https://github.com/msandula12/mikesandula",
     tech: ["React", "Gatsby", "Sass", "React Spring"],
     title: "MikeSandula.dev",
   },
   {
-    description: (
-      <>
-        <p>A micro app for finding Google Fonts via natural language search.</p>
-      </>
-    ),
+    description:
+      "A micro app for finding Google Fonts via natural language search.",
     href: "https://fontfinder.netlify.app/",
     source: "https://github.com/msandula12/font-finder",
     tech: [
@@ -49,33 +40,85 @@ const Projects = () => {
           {PROJECTS.length > 0 ? (
             <div className={styles.projectsList}>
               {PROJECTS.map((project) => (
-                <div className={styles.project} key={hyphenate(project.title)}>
-                  <h4>
-                    <a href={project.href} rel="noreferrer" target="_blank">
-                      {project.title}
-                    </a>
-                  </h4>
-                  <div className={styles.projectDescription}>
-                    {project.description}
-                  </div>
-                  <ul className={styles.projectTech}>
-                    {project.tech.map((tech) => (
-                      <li
-                        className={styles.projectTechPill}
-                        key={`${project.name}-${tech}`}
+                <div key={hyphenate(project.title)}>
+                  <div>
+                    <span className="code-operator">{"<"}</span>
+                    <span className="code-class">{"Project"}</span>
+                    <div className="indented-1">
+                      <span className="code-field">{"name"}</span>
+                      <span className="code-operator">{"="}</span>
+                      <span className="code-string">{`"${project.title}"`}</span>
+                    </div>
+                    <div className="indented-1">
+                      <span className="code-field">{"url"}</span>
+                      <span className="code-operator">{"="}</span>
+                      <span className="code-string">
+                        "
+                        <a href={project.href} rel="noreferrer" target="_blank">
+                          {project.href}
+                        </a>
+                        "
+                      </span>
+                    </div>
+                    <div className="indented-1">
+                      <span className="code-field">{"source"}</span>
+                      <span className="code-operator">{"="}</span>
+                      <span className="code-string">
+                        "
+                        <a
+                          href={project.source}
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          {project.source}
+                        </a>
+                        "
+                      </span>
+                    </div>
+                    <div className="indented-1">
+                      <span className="code-field">{"tech"}</span>
+                      <span className="code-operator">{"="}</span>
+                      <span className="code-field">{"{"}</span>
+                      <span className="code-method">{"["}</span>
+                    </div>
+                    {project.tech.map((tech, index) => (
+                      <div
+                        className="indented-2"
+                        key={`${project.title}-${tech}`}
                       >
-                        {tech}
-                      </li>
+                        <span className="code-string">{`"${tech}"${
+                          index < project.tech.length - 1 ? "," : ""
+                        }`}</span>
+                      </div>
                     ))}
-                  </ul>
-                  <a
-                    className={styles.projectSource}
-                    href={project.source}
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Source <i className="fas fa-external-link-alt" />
-                  </a>
+                    <div className="indented-1">
+                      <span className="code-method">{"]"}</span>
+                      <span className="code-field">{"}"}</span>
+                    </div>
+                    <div>
+                      <span className="code-operator">{"/>"}</span>
+                    </div>
+                    <div className="indented-1">
+                      <span className="code-operator">{"<"}</span>
+                      <span className="code-class">{"Description"}</span>
+                      <span className="code-operator">{">"}</span>
+                    </div>
+                    <div className="indented-2">
+                      <span className="code-annotation">
+                        {project.description}
+                      </span>
+                    </div>
+                    <div className="indented-1">
+                      <span className="code-operator">{"</"}</span>
+                      <span className="code-class">{"Description"}</span>
+                      <span className="code-operator">{">"}</span>
+                    </div>
+                    <div>
+                      <span className="code-operator">{"</"}</span>
+                      <span className="code-class">{"Project"}</span>
+                      <span className="code-operator">{">"}</span>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
