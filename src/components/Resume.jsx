@@ -12,7 +12,7 @@ import { cx } from "../utils";
 const Resume = ({ isActive }) => {
   const downloadPdfButtonTransition = useTransition(isActive, null, {
     from: { bottom: 0, right: 32, opacity: 0, position: "fixed" },
-    enter: { bottom: 40, opacity: 1 },
+    enter: { bottom: 128, opacity: 1 },
     leave: { bottom: 0, opacity: 0 },
     config: config.gentle,
   });

@@ -3,6 +3,10 @@
   color: var(--background-primary);
 }
 
+.aboutContent {
+  width: calc(100% - 6em);
+}
+
 .contactMe {
   font-size: 14px;
   font-style: italic;
@@ -34,4 +38,10 @@
 
 .linkedin i:hover {
   color: var(--linkedin);
+}
+
+@media only screen and (min-width: 768px) {
+  .aboutContent {
+    width: 600px;
+  }
 }

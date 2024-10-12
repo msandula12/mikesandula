@@ -19,7 +19,7 @@ const About = ({ isActive }) => {
     <div className={cx("page", styles.about)}>
       <FadeInSection>
         <h1>About</h1>
-        <div className="content">
+        <div className={cx("content", styles.aboutContent)}>
           <p>
             Hello! My name is Mike Sandula. I am a seasoned software engineer
             with over 8 years of experience crafting high-quality, user-centric

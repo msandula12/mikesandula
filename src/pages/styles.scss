@@ -63,13 +63,13 @@ p {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  padding: 8em 0;
+  padding: 8em 1em;
   width: 100%;
 }
 
 .content {
   font-size: 18px;
-  width: 600px;
+  width: 100%;
 }
 
 h1 {
@@ -164,4 +164,10 @@ a {
 
 .code-string {
   color: var(--code-string);
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    width: 600px;
+  }
 }
