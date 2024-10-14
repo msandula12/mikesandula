@@ -94,26 +94,6 @@ a {
   text-align: right;
 }
 
-.indented-1 {
-  margin-left: 1em;
-}
-
-.indented-2 {
-  margin-left: 2em;
-}
-
-.indented-3 {
-  margin-left: 3em;
-}
-
-.indented-4 {
-  margin-left: 4em;
-}
-
-.indented-5 {
-  margin-left: 5em;
-}
-
 .clickable-padding {
   cursor: pointer;
   margin: -0.5em;
@@ -137,7 +117,14 @@ a {
   float: right;
 }
 
-/* CODE COLORS */
+/* Code indents */
+@for $i from 1 through 5 {
+  [class="indented-#{$i}"] {
+    margin-left: #{$i * 1em};
+  }
+}
+
+/* Code colors */
 .code-annotation {
   color: var(--code-annotation);
 }
