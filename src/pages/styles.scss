@@ -125,32 +125,12 @@ a {
 }
 
 /* Code colors */
-.code-annotation {
-  color: var(--code-annotation);
-}
+$code-types: annotation class field method operator singleLineComment string;
 
-.code-class {
-  color: var(--code-class);
-}
-
-.code-field {
-  color: var(--code-field);
-}
-
-.code-method {
-  color: var(--code-method);
-}
-
-.code-operator {
-  color: var(--code-operator);
-}
-
-.code-singleLineComment {
-  color: var(--code-singleLineComment);
-}
-
-.code-string {
-  color: var(--code-string);
+@each $type in $code-types {
+  .code-#{$type} {
+    color: var(--code-#{$type});
+  }
 }
 
 [class^="code"] {
