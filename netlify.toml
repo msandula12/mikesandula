@@ -1,0 +1,11 @@
+[[redirects]]
+from = "https://mikesandula.com"
+to = "https://mikesandula.dev"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://mikesandula.com/*"
+to = "https://mikesandula.dev/:splat"
+status = 301
+force = true
