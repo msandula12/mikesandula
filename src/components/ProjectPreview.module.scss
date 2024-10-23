@@ -1,0 +1,45 @@
+.projectPreview {
+  border-radius: 1em;
+  border: 1px solid var(--border-gray);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+  height: 300px;
+  overflow: hidden;
+}
+
+.paneHeader {
+  border-bottom: 1px solid var(--border-gray);
+  font-size: 14px;
+  padding: 0.5em 1em;
+}
+
+.paneHeader:first-of-type,
+.leftPane {
+  border-right: 1px solid var(--border-gray);
+}
+
+.leftPane {
+  font-size: 12px;
+  overflow-y: auto;
+  padding: 1em;
+  scrollbar-color: var(--border-gray) var(--background-primary);
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    background: var(--background-primary);
+    width: 0.5em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--border-gray);
+    border-radius: 0.5em;
+  }
+}
+
+.rightPane img {
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+  width: 100%;
+}

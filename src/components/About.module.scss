@@ -21,7 +21,7 @@
   flex-direction: column;
 
   i {
-    color: #4a4a4a;
+    color: var(--border-gray);
     font-size: 64px;
     margin-bottom: 0.5em;
     transition: color 0.4s ease-out;
