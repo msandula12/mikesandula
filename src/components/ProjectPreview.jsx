@@ -8,8 +8,10 @@ const ProjectPreview = ({ project }) => {
       <div className={styles.paneHeader}>App.jsx</div>
       <div className={styles.paneHeader}>Preview</div>
       <div className={styles.leftPane}>
-        <span className="code-operator">{"<"}</span>
-        <span className="code-class">{"Project"}</span>
+        <div className="code-operator">
+          {"<"}
+          <span className="code-class">{"Project"}</span>
+        </div>
         <div className="indented-1">
           <span className="code-field">{"name"}</span>
           <span className="code-operator">{"="}</span>

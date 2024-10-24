@@ -121,7 +121,7 @@ a {
 /* Code indents */
 @for $i from 1 through 5 {
   [class="indented-#{$i}"] {
-    margin-left: #{$i * 1em};
+    padding-left: #{$i * 1em};
   }
 }
 
