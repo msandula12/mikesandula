@@ -20,12 +20,9 @@
   border-right: 1px solid var(--border-gray);
 }
 
-.leftPane {
-  font-size: 12px;
-  overflow-y: auto;
-  padding-bottom: 1em;
-  padding-right: 1em;
-  position: relative;
+.leftPane,
+.rightPane {
+  overflow: auto;
   scrollbar-color: var(--border-gray) var(--background-primary);
   scrollbar-width: thin;
 
@@ -38,6 +35,13 @@
     background: var(--border-gray);
     border-radius: 0.5em;
   }
+}
+
+.leftPane {
+  font-size: 12px;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  position: relative;
 
   > div {
     margin-left: 4em;
