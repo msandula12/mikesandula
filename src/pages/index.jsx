@@ -136,7 +136,7 @@ export const Head = () => (
     <html lang="en" />
     <link href="/icon.png" rel="icon" type="image/png" />
     <meta name="title" content="Mike Sandula" />
-    <meta name="description" content="Mike Sandula's personal website" />
+    <meta name="description" content="Mike Sandula — Software Engineer" />
     <title>Mike Sandula</title>
     {/* Font Awesome */}
     <Script src="https://kit.fontawesome.com/128c2396ac.js" defer />
