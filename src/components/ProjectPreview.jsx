@@ -5,7 +5,7 @@ import * as styles from "./ProjectPreview.module.scss";
 const ProjectPreview = ({ project }) => {
   return (
     <div className={styles.projectPreview}>
-      <div className={styles.paneHeader}>App.jsx</div>
+      <div className={styles.paneHeader}>Code</div>
       <div className={styles.paneHeader}>Preview</div>
       <div className={styles.leftPane}>
         <div className="code-operator">
