@@ -24,5 +24,8 @@
     "react-dom": "^18.2.0",
     "react-spring": "8.0.27",
     "sass": "^1.77.8"
+  },
+  "devDependencies": {
+    "gatsby-plugin-simple-analytics": "^1.0.4"
   }
 }

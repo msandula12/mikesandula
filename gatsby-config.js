@@ -17,5 +17,14 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-plugin-simple-analytics",
+      options: {
+        events: true,
+        eventsGlobal: "sa_event",
+        ignorePages: [],
+        trackPageViews: true,
+      },
+    },
   ],
 };

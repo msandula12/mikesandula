@@ -138,6 +138,7 @@ export const Head = () => (
     <meta name="title" content="Mike Sandula" />
     <meta name="description" content="Mike Sandula — Software Engineer" />
     <title>Mike Sandula</title>
+
     {/* Font Awesome */}
     <Script src="https://kit.fontawesome.com/128c2396ac.js" defer />
   </>
