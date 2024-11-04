@@ -1,0 +1,27 @@
+{
+  "projects": [
+    {
+      "description": "A micro app for finding Google Fonts via natural language search.",
+      "href": "https://fontfinder.netlify.app/",
+      "screenshot": "fontfinder.png",
+      "source": "https://github.com/msandula12/font-finder",
+      "tech": [
+        "React",
+        "TypeScript",
+        "Sass",
+        "Vite",
+        "Google Fonts API",
+        "Open AI API"
+      ],
+      "title": "FontFinder"
+    },
+    {
+      "description": "My personal website aka the site you're on right now.",
+      "href": "https://mikesandula.dev",
+      "screenshot": "mikesandula.png",
+      "source": "https://github.com/msandula12/mikesandula",
+      "tech": ["React", "Gatsby", "Sass", "React Spring"],
+      "title": "MikeSandula.dev"
+    }
+  ]
+}
