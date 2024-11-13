@@ -1,6 +1,23 @@
 {
   "projects": [
     {
+      "description": "Created for my wife so she can easily upload photos from her iPhone and download them on our Windows PC.",
+      "href": "https://photosphere-app.vercel.app/",
+      "screenshot": "photosphere.png",
+      "source": "https://github.com/msandula12/photosphere",
+      "tech": [
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "shadcn/ui",
+        "Zustand",
+        "Drizzle",
+        "PostgreSQL",
+        "Clerk"
+      ],
+      "title": "PhotoSphere"
+    },
+    {
       "description": "A micro app for finding Google Fonts via natural language search.",
       "href": "https://fontfinder.netlify.app/",
       "screenshot": "fontfinder.png",
