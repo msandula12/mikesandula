@@ -8,6 +8,10 @@ import { cx, hyphenate } from "../utils";
 
 const ARTICLES = [
   {
+    href: "https://dev.to/msandula12/separating-ourselves-from-the-separation-of-concerns-2i0e",
+    title: "Separating ourselves from the separation of concerns",
+  },
+  {
     href: "https://dev.to/msandula12/using-pow-and-sqrt-in-css-to-make-shapes-with-shapes-1ma0",
     title: "Using pow() and sqrt() in CSS to make shapes with shapes",
   },
