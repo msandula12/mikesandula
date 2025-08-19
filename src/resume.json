@@ -49,6 +49,7 @@
         "Figma",
         "GitHub/GitLab",
         "Jira",
+        "Linear",
         "Semaphore"
       ]
     },
@@ -65,26 +66,42 @@
   ],
   "jobs": [
     {
+      "company": "Rollbar",
+      "location": "San Francisco, CA (remote)",
+      "roles": [
+        {
+          "descriptions": [
+            "Served as frontend lead for the launch of the Session Replays product, delivering core components ahead of schedule and aligning with broader product milestones",
+            "Partnered closely with design to define and implement a scalable set of reusable UI components, improving consistency and development velocity",
+            "Authored technical specs for new features—including a feature highlight module and chip-based filtering system—ensuring alignment across engineering and product",
+            "Implemented a simplified onboarding flow, driving a 500% increase in signup conversion (from 7% to 36%)"
+          ],
+          "endDate": null,
+          "startDate": "December 2024 ",
+          "title": "Senior Software Engineer"
+        }
+      ]
+    },
+    {
       "company": "Dictionary.com",
       "location": "Oakland, CA (remote)",
       "roles": [
         {
           "descriptions": [
-            "Lead engineer for redesign of Dictionary.com and Thesaurus.com websites, serving 40 million daily users",
-            "Developed in-house design system in tandem with design team using Figma, Ariakit, and Style Dictionary",
-            "Converted 5+ RESTful API calls into a single Apollo GraphQL query that retrieved only the necessary data for populating Dictionary and Thesaurus browse pages",
+            "Drove frontend execution for the full redesign of Dictionary.com and Thesaurus.com, ensuring performance, accessibility, and scalability for 40 million daily users",
+            "Directed cross-functional efforts to build a robust in-house design system using Figma and Style Dictionary",
+            "Consolidated fragmented RESTful API calls into a single, efficient GraphQL query via Apollo, significantly improving data flow and performance for the website’s most frequently visited pages",
             "Implemented Storyblok’s Headless CMS to populate shared data modules, enhancing content creation and scheduling efficiency for the content team",
-            "Formulated a design patterns document to establish best coding practices across engineering teams"
+            "Authored a design patterns document to establish best coding practices across multiple engineering teams"
           ],
-          "endDate": null,
+          "endDate": "May 2024",
           "startDate": "April 2023",
           "title": "Staff Software Engineer"
         },
         {
           "descriptions": [
-            "Optimized UX of Grammar Coach editor by integrating WebSockets and implementing sentence diffing, which reduced the average payload size by 90 percent and decreased API latency by 75 percent",
-            "Refactored Grammar Coach’s Next.js codebase (100+ components) to TypeScript, introduced Redux Toolkit, and significantly expanded end-to-end testing coverage with Cypress",
-            "Collaborated with product, design, backend, and machine learning teams in an agile environment"
+            "Enhanced Grammar Coach editor UX by integrating WebSockets and implementing sentence diffing, reducing payload size by 90% and API latency by 75%",
+            "Led modernization of Grammar Coach’s 100+ component Next.js codebase by migrating to TypeScript, introducing Redux Toolkit, and expanding E2E test coverage with Cypress"
           ],
           "endDate": "April 2023",
           "startDate": "August 2021",
@@ -98,9 +115,9 @@
       "roles": [
         {
           "descriptions": [
-            "Developed and managed a React with Redux and TypeScript frontend of an end-to-end budget forecasting application with millions of hospital records for Trinity Health’s budget team",
-            "Designed a multi-page dashboard application with interactive charts and graphs with Dash/Flask (Python)",
-            "Contributed to the recruitment and mentoring of junior engineers and interns, facilitating their seamless onboarding and training processes"
+            "Led frontend development of a scalable React with Redux and TypeScript application for Trinity Health’s budget forecasting tool, handling millions of hospital records with high performance and reliability",
+            "Designed a multi-page dashboard application with interactive charts and graphs using Dash/Flask (Python)",
+            "Supported team growth by mentoring junior engineers and interns, shaping onboarding processes and accelerating their integration into production work"
           ],
           "endDate": "July 2021",
           "startDate": "January 2019",
@@ -114,10 +131,9 @@
       "roles": [
         {
           "descriptions": [
-            "Launched multiple websites and web apps for various clients using cutting-edge frontend frameworks such as Angular 2+, React and Vue",
-            "Led frontend development for Logicdrop’s Studio Platform, a tool for enterprise-level document automation with a drag-and-drop template editor comprised of over 20 custom elements",
-            "Utilized RxJS observables to provide real-time progress updates to users uploading large documents",
-            "Implemented robust functionality for importing Excel spreadsheets and .CSV files into editable data tables"
+            "Delivered production-ready websites and web apps for diverse clients, leveraging modern frameworks including Angular 2+, React, and Vue to meet complex UI and performance needs",
+            "Implemented core frontend systems for Logicdrop’s Studio Platform, an enterprise-grade document automation tool featuring a custom drag-and-drop template editor with over 20 modular components",
+            "Engineered real-time feedback for large document uploads using RxJS observables"
           ],
           "endDate": "December 2018",
           "startDate": "April 2016",
