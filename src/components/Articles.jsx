@@ -8,6 +8,15 @@ import { cx, hyphenate } from "../utils";
 
 const ARTICLES = [
   {
+    href: "https://dev.to/msandula12/climbing-the-software-engineering-ranks-going-from-senior-to-staff-28m4",
+    title:
+      "Climbing the software engineering ranks: Going from senior to staff",
+  },
+  {
+    href: "https://dev.to/msandula12/climbing-the-software-engineering-ranks-going-from-mid-to-senior-1fi",
+    title: "Climbing the software engineering ranks: Going from mid to senior",
+  },
+  {
     href: "https://dev.to/msandula12/separating-ourselves-from-the-separation-of-concerns-2i0e",
     title: "Separating ourselves from the separation of concerns",
   },
