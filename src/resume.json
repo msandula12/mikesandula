@@ -71,7 +71,8 @@
       "roles": [
         {
           "descriptions": [
-            "Served as frontend lead for the launch of the Session Replays product, delivering core components ahead of schedule and aligning with broader product milestones",
+            "Designated Team Lead for the launch of Rollbar's Resolve agent",
+            "Spearheaded the migration of legacy settings pages across multiple repositories, modernizing the codebase and reducing maintenance complexity",
             "Partnered closely with design to define and implement a scalable set of reusable UI components, improving consistency and development velocity",
             "Authored technical specs for new features—including a feature highlight module and chip-based filtering system—ensuring alignment across engineering and product",
             "Implemented a simplified onboarding flow, driving a 500% increase in signup conversion (from 7% to 36%)"
