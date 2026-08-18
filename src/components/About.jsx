@@ -7,6 +7,25 @@ import * as styles from "./About.module.scss";
 
 import { cx } from "../utils";
 
+function getYearsOfExperience() {
+  const started = new Date(2016, 3, 1); // April 1, 2016
+  const now = new Date();
+
+  let years = now.getFullYear() - started.getFullYear();
+
+  const anniversary = new Date(
+    started.getFullYear() + years,
+    started.getMonth(),
+    started.getDate(),
+  );
+
+  if (now < anniversary) {
+    years--;
+  }
+
+  return years;
+}
+
 const About = ({ isActive }) => {
   const socialIconsTransition = useTransition(isActive, null, {
     from: { bottom: 40, right: 0, opacity: 0, position: "fixed" },
@@ -22,9 +41,10 @@ const About = ({ isActive }) => {
         <div className={cx("content", styles.aboutContent)}>
           <p>
             Hello! My name is Mike Sandula. I am a seasoned software engineer
-            with over 8 years of experience crafting high-quality, user-centric
-            websites and web applications with the latest technologies (I
-            started using TypeScript way before it was cool).
+            with over {getYearsOfExperience()} years of experience crafting
+            high-quality, user-centric websites and web applications with the
+            latest technologies (I started using TypeScript way before it was
+            cool).
           </p>
           <p>
             I'm a problem-solver (I still do my daily Wordle) with a proven
@@ -92,7 +112,7 @@ const About = ({ isActive }) => {
                 <i className="fab fa-codepen" />
               </a>
             </animated.div>
-          )
+          ),
       )}
     </div>
   );
