@@ -27,7 +27,7 @@
   white-space: nowrap !important;
 }
 
-.saCredit svg {
+.saCredit__logo {
   all: unset !important;
   display: inline-block !important;
   fill: var(--code-operator) !important;
@@ -36,7 +36,7 @@
 }
 
 @supports (height: 1cap) {
-  .saCredit svg {
+  .saCredit__logo {
     height: 1.305714cap !important;
     vertical-align: -0.285714cap !important;
   }

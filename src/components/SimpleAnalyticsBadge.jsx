@@ -15,6 +15,7 @@ const SimpleAnalyticsBadge = () => {
       <span className={styles.saCredit__byline}>
         by{" "}
         <svg
+          className={styles.saCredit__logo}
           role="img"
           viewBox="0 -714 8871 914"
           xmlns="http://www.w3.org/2000/svg"
